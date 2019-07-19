@@ -1,0 +1,40 @@
+server:
+  port: 8082
+
+spring:
+  # 属性值可以为空，但是不能没有以下字段，否则启动报错
+  datasource:
+    url: jdbc:mysql://118.126.test.120:3306/test?serverTimezone=UTC
+    username:
+    password:
+    driver-class-name: com.mysql.jdbc.Driver
+
+  redis:
+     # Redis数据库索引（默认为0）
+     database: 0
+     # Redis服务器地址
+     host: localhost
+     # Redis服务器连接端口(默认 6379)
+     port: 6379
+     # Redis服务器连接密码（默认为空）
+     password:
+     # springboot2.x 需要这样配置
+       lettuce:
+         pool:
+           max-active: 8
+           max-wait: -1ms
+           min-idle: 0
+  application:
+        name: rabbitMQ
+  rabbitmq:
+    # 配置连接IP地址，本机安装的 RabbitMQ 的话可以用localhost
+    host: xxx.xxx.xxx.xxx
+    # 这里配置的是 RabbitMQ 的连接端口，是5672哦不是15672
+    port: 5672
+    username: hqweay
+    password: hqweay
+
+info:
+  app:
+    name: RabbitMQ测试连接
+    version: 0.0.1
