@@ -313,7 +313,7 @@ redis 是提供了常见的数据结构的存储你,如 String,List...
 
 # skill-frontend 前端说明
 
-![](https://raw.githubusercontent.com/hqweay/skill-frontend/master/screenshot/index.jpg)
+![](https://raw.githubusercontent.com/hqweay/vue-springboot-restful-seckill/master/skill-frontend/screenshot/index.jpg)
 
 ## 说明
 
